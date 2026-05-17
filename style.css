@@ -86,6 +86,7 @@ a {
   color: #ffffff;
   background-color: #3882f6;
   font-size: clamp(12px, 1.5vw, 16px);
+  cursor: pointer;
 }
 
 .image-container {
