@@ -1,52 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* BASE */
 body {
-    box-sizing: border-box;
-    max-width: 1000px;
-    min-height: 100vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    background-color: #1F2937;
-    font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #1F2937;
+  font-family: "Roboto", sans-serif;
 }
 
-.content {
-    flex: 1;
-    background-color: #ffffff;
-}
-
+/* SHARED COLORS */
 .header,
-a,
-.footer {
-    color: #ffffff;
+.hero,
+.text,
+.footer,
+a {
+  color: #ffffff;
 }
 
+/* SHARED FONT SIZE */
+.footer,
+.text,
+a {
+  font-size: clamp(12px, 1.5vw, 18px);
+}
+
+/* HEADER */
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 2px solid #ffffff;
+  font-size: clamp(14px, 2vw, 20px);
 }
 
 .hlogo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.footer {
-    font-size: 18px;
-    margin: auto;
-    padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
 }
 
 a {
-    text-decoration: none;
-    font-size: 18px;
+  text-decoration: none;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  background-color: #ffffff;
+}
+
+/* INFO1 */
+.info1 {
+  display: flex;
+  background-color: #1F2937;
+  padding: 40px;
+  gap: 40px;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(24px, 4vw, 48px);
+  gap: 10px;
+  overflow: hidden;
+}
+
+.button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3882f6;
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+
+.image-container {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 25px;
+  object-fit: cover;
+  display: block;
+}
+
+/* FOOTER */
+.footer {
+  margin: auto;
+  padding: 15px;
 }
