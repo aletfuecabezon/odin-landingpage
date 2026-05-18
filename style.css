@@ -163,6 +163,12 @@ img {
   padding: 0px 30px;
 }
 
+.callto-container {
+  display: flex;
+  background-color: #3882f6;
+  justify-content: space-between;
+}
+
 /* FOOTER */
 .footer {
   margin: auto;
